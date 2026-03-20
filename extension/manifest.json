@@ -1,0 +1,34 @@
+{ 
+  "manifest_version": 3,
+  "name": "CRXPHISHER",
+  "version": "0.1.0",
+  "description": "CRXPHISHER EXTENSION",
+  "permissions": [ "storage", "tabs", "notifications","scripting", "activeTab", "declarativeNetRequest","declarativeNetRequestFeedback","proxy"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }, 
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "icons": {
+    "24": "assets/24.png",
+    "64": "assets/64.png",
+    "128": "assets/128.png"
+  },
+  
+  "action": {
+    "default_icon": {
+      "64": "assets/64.png"
+    },
+    "default_title": "CRXPHISHER"
+  }
+}
